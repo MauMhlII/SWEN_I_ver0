@@ -31,6 +31,18 @@ public class TestPatient {
         assertNull(patient.getNachname());
     }
 /*---///-----///---*//*---///-----///---*//*---///-----///---*//*---///-----///---*//*---///-----///---*/
+@Test
+    public void testValidVorname() {
+        Patient patient = new Patient("AB12345678", "Max", "Mustermann");
+        assertEquals("Max", patient.getVorname());
+    }
+/*---///-----///---*//*---///-----///---*//*---///-----///---*//*---///-----///---*//*---///-----///---*/
+@Test
+    public void testValidNachname() {
+        Patient patient = new Patient("CD98765432", "Alice", "Johnson");
+        assertEquals("Johnson", patient.getNachname());
+    }
+/*---///-----///---*//*---///-----///---*//*---///-----///---*//*---///-----///---*//*---///-----///---*/
 
 
 
